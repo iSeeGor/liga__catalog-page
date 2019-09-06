@@ -53,7 +53,7 @@ function watch() {
         // server: {
         //     baseDir: "./"
         // },
-        proxy: 'http://liga/'
+        proxy: 'http://liga2/'
     })
     gulp.watch('./src/js/**/*.js', js)
     gulp.watch('./src/sass/**/*.scss', sass)

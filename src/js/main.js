@@ -40,7 +40,7 @@ const preventDefaultLinks = () => {
 // Toggle for Filter Tabs
 const filterTabsToggle = () => {
 
-  const tabs = document.querySelectorAll('.filter-tab');
+  const tabs = document.querySelectorAll('.button__filter-tab');
 
   function toggle(tab){
 

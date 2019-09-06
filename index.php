@@ -5,15 +5,11 @@
                     <div class="container">
                         <div class="row">                       
                             <div class="category-layout__filter col-lg-4 col-md-5">
-                                <div class="block-filter">
+                                <form class="block-filter">
                                     <div class="block-filter__tabs">
-                                        <div class="filter-tab filter-tab--active">
-                                            <a href="#" class="link-tab">Продажа</a>
-                                        </div>
-                                        <div class="filter-tab">
-                                            <a href="#" class="link-tab">Аренда</a>
-                                        </div>
-                                    </div><!-- block-filter__tabs -->                           
+                                        <button class="button__filter-tab filter-tab--active">Продажа</button>
+                                        <button class="button__filter-tab">Аренда</button>
+                                    </div><!-- block-filter__tabs -->                            
                                     <div class="block-filter__prise-range">
                                         <h4 class="filter-title prise-range__title">Цена, EUR</h4>
                                         <div class="prise-range__inputs">
@@ -25,231 +21,257 @@
                                         <h4 class="filter-title">Тип недвижимости</h4>
                                         
                                         <label class="filter-list__item">Таунхаус
-                                            <input type="checkbox" checked="checked">
+                                            <input type="checkbox" checked="checked" name="types[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">Дуплекс
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="types[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">Дуплексы с выходом в сад
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="types[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">Дома          <input type="checkbox">
+                                        <label class="filter-list__item">Дома          <input type="checkbox" name="types[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">Квартиры
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="types[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">6 вариант
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="types[]">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="block-filter__checkbox-unit">
                                         <h4 class="filter-title">Город</h4>
                                         
-                                        <label class="filter-list__item">Алания                   <input type="checkbox">
+                                        <label class="filter-list__item">Алания
+                                            <input type="checkbox" name="city[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">Анталия
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="city[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">Северный Кипр
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="city[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">Стамбул          <input type="checkbox">
+                                        <label class="filter-list__item">Стамбул
+                                            <input type="checkbox" name="city[]">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="block-filter__checkbox-unit">
                                         <h4 class="filter-title">Район</h4>
                                         
-                                        <label class="filter-list__item">Авсаллар                   <input type="checkbox">
+                                        <label class="filter-list__item">Авсаллар
+                                            <input type="checkbox" name="district[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">Махмутлар
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="district[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">Газипаша
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="district[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">Кестель          <input type="checkbox">
+                                        <label class="filter-list__item">Кестель
+                                            <input type="checkbox" name="district[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">5 вариант          <input type="checkbox">
+                                        <label class="filter-list__item">5 вариант
+                                            <input type="checkbox" name="district[]">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="block-filter__checkbox-unit">
                                         <h4 class="filter-title">Рынок жилья</h4>
                                         
-                                        <label class="filter-list__item">Вторичный фонд                   <input type="checkbox">
+                                        <label class="filter-list__item">Вторичный фонд
+                                            <input type="checkbox" name="market[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">На стадии строительства
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="market[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">Готовое новое
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="market[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">4 вариант          <input type="checkbox">
+                                        <label class="filter-list__item">4 вариант
+                                            <input type="checkbox" name="market[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">5 вариант          <input type="checkbox">
+                                        <label class="filter-list__item">5 вариант
+                                            <input type="checkbox" name="market[]">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="block-filter__checkbox-unit">
                                         <h4 class="filter-title">Количество комнат</h4>
                                         
-                                        <label class="filter-list__item">студия            <input type="checkbox">
+                                        <label class="filter-list__item">студия
+                                            <input type="checkbox" name="rooms[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">1+1
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="rooms[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">2+1
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="rooms[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">3+1          <input type="checkbox">
+                                        <label class="filter-list__item">3+1
+                                            <input type="checkbox" name="rooms[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">4+1          <input type="checkbox">
+                                        <label class="filter-list__item">4+1
+                                            <input type="checkbox" name="rooms[]">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="block-filter__checkbox-unit">
                                         <h4 class="filter-title">Год постройки</h4>
                                         
-                                        <label class="filter-list__item">сдается через 0 - 3 года            <input type="checkbox">
+                                        <label class="filter-list__item">сдается через 0 - 3 года
+                                            <input type="checkbox" name="year[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">не старше 5 лет
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="year[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">не старше 10 лет
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="year[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">не старше 15 лет          <input type="checkbox">
+                                        <label class="filter-list__item">не старше 15 лет
+                                            <input type="checkbox" name="year[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">старше 15 лет          <input type="checkbox">
+                                        <label class="filter-list__item">старше 15 лет
+                                            <input type="checkbox" name="year[]">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="block-filter__checkbox-unit">
                                         <h4 class="filter-title">Расстояние до моря</h4>
                                         
-                                        <label class="filter-list__item">0 - 100 м (первая береговая линия)            <input type="checkbox">
+                                        <label class="filter-list__item">0 - 100 м (первая береговая линия)
+                                            <input type="checkbox" name="distance[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">100 - 500 м
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="distance[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">500 - 1000 м
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="distance[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">1000 - 2000 м          <input type="checkbox">
+                                        <label class="filter-list__item">1000 - 2000 м
+                                            <input type="checkbox" name="distance[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">больше 2000 м          <input type="checkbox">
+                                        <label class="filter-list__item">больше 2000 м
+                                            <input type="checkbox" name="distance[]">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="block-filter__checkbox-unit">
                                         <h4 class="filter-title">Этаж</h4>
                                         
-                                        <label class="filter-list__item">не первый            <input type="checkbox">
+                                        <label class="filter-list__item">не первый
+                                            <input type="checkbox" name="floor[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">не первый, не последний
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="floor[]">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="block-filter__checkbox-unit">
                                         <h4 class="filter-title">Меблировка</h4>
                                         
-                                        <label class="filter-list__item">есть            <input type="checkbox">
+                                        <label class="filter-list__item">есть
+                                            <input type="checkbox" name="interier[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">нет
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="interier[]">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="block-filter__checkbox-unit">
                                         <h4 class="filter-title">Наличие крытого бассейна</h4>
                                         
-                                        <label class="filter-list__item">есть            <input type="checkbox">
+                                        <label class="filter-list__item">есть
+                                            <input type="checkbox" name="pool[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">нет
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="pool[]">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="block-filter__checkbox-unit">
                                         <h4 class="filter-title">Количество санузлов</h4>
                                         
-                                        <label class="filter-list__item">1 вариант           <input type="checkbox">
+                                        <label class="filter-list__item">1 вариант
+                                            <input type="checkbox" name="badhroom[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">2 вариант
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="badhroom[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">3 вариант
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="badhroom[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">4 вариант          <input type="checkbox">
+                                        <label class="filter-list__item">4 вариант
+                                            <input type="checkbox" name="badhroom[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">5 вариант          <input type="checkbox">
+                                        <label class="filter-list__item">5 вариант
+                                            <input type="checkbox" name="badhroom[]">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="block-filter__checkbox-unit">
                                         <h4 class="filter-title">Отопление</h4>
                                         
-                                        <label class="filter-list__item">1 вариант           <input type="checkbox">
+                                        <label class="filter-list__item">1 вариант
+                                            <input type="checkbox" name="heating[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">2 вариант
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="heating[]">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="filter-list__item">3 вариант
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="heating[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">4 вариант          <input type="checkbox">
+                                        <label class="filter-list__item">4 вариант
+                                            <input type="checkbox" name="heating[]">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="filter-list__item">5 вариант          <input type="checkbox">
+                                        <label class="filter-list__item">5 вариант
+                                            <input type="checkbox" name="heating[]">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="block-filter__dropp">
                                         <a href="#" class="dropp-filter--btn">Сбросить фильтр</a>
                                     </div>
-                                </div>
+                                </form>
                             </div><!-- category-layout__filter -->
                             <div class="category-layout__content col-lg-8 col-md-7">
                                 <div class="article-view__category-list">

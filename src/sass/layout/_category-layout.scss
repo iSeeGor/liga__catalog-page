@@ -27,42 +27,82 @@
     box-shadow: 10px 7px 46px 8px rgba(94, 134, 139, 0.25); 
 }
 
-.filter-tab {
-    flex: 1 1 50%;
-    height: 75px;
-    line-height: 75px;
-    text-align: center;
+// .filter-tab {
+//     flex: 1 1 50%;
+//     height: 75px;
+//     line-height: 75px;
+//     text-align: center;
+//     position: relative;
+//     z-index: 1;
+//     background: white;
+// }
+
+// .filter-tab::after {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     bottom: 0;
+//     height: 0px;
+//     width: 100%;
+//     background-color: #41dfd0;
+//     transition: height .2s ease;
+// }
+
+// .filter-tab--active::after {
+//     height: 16px;
+// }
+
+// .link-tab {
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     letter-spacing: 0.07rem;
+//     display: block;
+//     position: relative;
+//     z-index: 2;
+// }
+
+// .filter-tab--active a {
+//     @include noto_bold;
+// }
+
+.button__filter-tab {
+    border:none;
+    width: 50%;
+    background: #fff;
+    background-color: #fff;
+    display: inline-block;
+    // overflow: hidden;
     position: relative;
-    z-index: 1;
-    background: white;
-}
-
-.filter-tab::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    height: 0px;
-    width: 100%;
-    background-color: #41dfd0;
-    transition: height .2s ease;
-}
-
-.filter-tab--active::after {
-    height: 16px;
-}
-
-.link-tab {
+    padding: 0;
+    height: 75px;
+    line-height: 73px;
+    z-index: 11;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.07rem;
     display: block;
     position: relative;
     z-index: 2;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: #41dfd0;
+        transition: height .2s ease;
+    }
 }
 
-.filter-tab--active a {
+.filter-tab--active {
     @include noto_bold;
+}
+
+.filter-tab--active::after {
+    height: 16px;
 }
 
 
